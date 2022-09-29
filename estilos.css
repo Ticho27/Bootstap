@@ -1,5 +1,261 @@
 @media screen and (min-width: 576px) {
-    .none{
+    .none {
         display: none;
     }
 }
+
+footer {
+    font-size: 11px;
+    font-family: helvetica;
+}
+
+input {
+    width: 32%;
+}
+
+.titulo {
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+.colorwhite {
+    color: white;
+}
+
+.colorsubti {
+    color: rgb(110, 129, 182);
+}
+
+.aquamarine {
+    background-color: rgb(237, 245, 252);
+}
+
+.borderwhite {
+    border: solid 1px white;
+}
+
+.colorheader {
+    background-color: rgb(110, 129, 182);
+}
+
+/*FORMULARIO DE PAGINAS*/
+
+@media (min-width: 992px) {
+    .divform {/*Contenedor del Formulario*/
+        width: 80%;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas:
+        "a d g "
+        "b e h"
+        "c f i";
+}
+
+.forma {
+    grid-area: a;
+    margin-top: 5%;
+}
+
+.formb {
+    grid-area: b;
+    margin-top: 5%;
+
+}
+
+.formc {
+    grid-area: c;
+}
+
+.formd {
+    grid-area: d;
+    margin-top: 3%;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+}
+
+.forme {
+    grid-area: e;
+    margin-top: 3%;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+}
+
+.formf {
+    grid-area: f;
+    margin-top: 3%;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+}
+
+.formg {
+    grid-area: g;
+    margin-top: 5%;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+}
+
+.formh {
+    grid-area: h;
+    width: 70%;
+    margin: auto;
+}
+
+.formi {
+    grid-area: i;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+
+@media (max-width: 576px) {
+    form  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px 100px 40px 40px 40px 40px 60px 40px;
+        grid-template-areas:
+            "a "
+            "b"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            ;
+    }
+    .formd{
+        grid-area: d;
+        margin-top: %;
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+    .forme{
+        grid-area: e;
+        margin-top: %;
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+    .formf{
+        grid-area: f;
+        margin-top: %;
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+    .formg{
+        grid-area: g;
+        margin-top: %;
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+    .formi{
+        grid-area: i;
+        margin-top: %;
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+}  
+
+/*FORMULARIO DE PAGINAS*/
+
+
+/*CCS DE NIVEL MEDIO*/
+
+.h1indexani1 {
+    /*Animaciones de h1 Index*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+.h1indexani2 {
+    /*Animaciones de h1 Index*/
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contprinci {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.texth2 {
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(110, 129, 182);
+}
+
+@media (min-width: 992px) {
+    .texth2 {
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.texth3 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .texth3 {
+        font-size: 18px;
+    }
+}
+
+.textul {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .textul {
+        font-size: 13px;
+    }
+}
+
+/*ANIMACIONES DE LAS TARJETAS INDEX*/
+
+.transition {
+    transition: all 1s ease-out;
+}
+
+.cardani:hover {
+    transform: scale(1.3, 1.1);
+}
+
+.cardheight {
+    height: 20%;
+}
+
+/*ANIMACIONES DE LAS TARJETAS INDEX*/
