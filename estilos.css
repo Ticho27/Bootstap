@@ -4,6 +4,65 @@
     }
 }
 
+
+
+
+.dbody{
+    position: absolute;
+    z-index: 1;
+    width: 100%; 
+}
+
+.precarga{
+    width: 50%;
+    height: 900px;
+    background-color: rgb(110, 129, 182);
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    overflow-y: hidden;
+    animation: ease-in-out;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: precarga;
+    animation-fill-mode: forwards;
+}
+
+.precarga2{
+    width: 50%;
+    height: 900px;
+    background-color: rgb(110, 129, 182);
+    position: absolute;
+    z-index: 2;
+    overflow-y: hidden;
+    right: 50%;
+    animation: ease-in-out;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: precarga2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes precarga{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes precarga2{
+    0%{ 
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+        right: 100%;
+    }
+}
+
 footer {
     font-size: 11px;
     font-family: helvetica;
@@ -42,7 +101,7 @@ input {
 
 @media (min-width: 992px) {
     .divform {/*Contenedor del Formulario*/
-        width: 80%;
+        width: 70%;
         margin-left: auto!important;
         margin-right: auto!important;
     }
@@ -137,35 +196,30 @@ form {
     }
     .formd{
         grid-area: d;
-        margin-top: %;
         height: 80%;
         width: 60%;
         margin: auto;
     }
     .forme{
         grid-area: e;
-        margin-top: %;
         height: 80%;
         width: 60%;
         margin: auto;
     }
     .formf{
         grid-area: f;
-        margin-top: %;
         height: 80%;
         width: 60%;
         margin: auto;
     }
     .formg{
         grid-area: g;
-        margin-top: %;
         height: 80%;
         width: 60%;
         margin: auto;
     }
     .formi{
         grid-area: i;
-        margin-top: %;
         height: 80%;
         width: 60%;
         margin: auto;
@@ -178,15 +232,18 @@ form {
 /*CCS DE NIVEL MEDIO*/
 
 .h1indexani1 {
-    /*Animaciones de h1 Index*/
+    /*Animaciones de h1 Index/NMedio*/
+    opacity:0;
+    animation-delay: 1.5s;
     animation-duration: 2s;
     animation-name: aparecer;
+    animation-fill-mode: forwards;
 }
 
 .h1indexani2 {
     /*Animaciones de h1 Index*/
     opacity: 0;
-    animation-delay: 2s;
+    animation-delay: 3.5s;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-fill-mode: forwards;
