@@ -88,6 +88,15 @@ $superiorcolor: rgb(155, 26, 194);
     background-color: $secundariacolor;
 
 }
+.precargaR--superior{
+    @extend .precargaR;
+    background-color: $superiorcolor;
+}
+.precargaL--superior{
+    @extend .precargaL;
+    background-color: $superiorcolor;
+
+}
 
 
 @keyframes precarga{
@@ -407,3 +416,8 @@ form {
         display: none;
     }
 } 
+
+.gradient{
+    background-image: linear-gradient($inicialcolor, orange);
+}
+
