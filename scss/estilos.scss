@@ -16,6 +16,7 @@ $superiorcolor: rgb(155, 26, 194);
 
 
 
+
 @media screen and (min-width: 576px) {
     .none {
         display: none;
@@ -132,11 +133,20 @@ input {
     font-weight: bold;
     font-family: helvetica;
     text-align: left!important;
-}
-
-.colorwhite {
     color: white;
 }
+ 
+.colorwhite { /*NAVBAR ITEMS*/
+    color: white;
+    text-align: right;
+}
+@media (max-width:576px){
+    .colorwhite{
+        margin-right: 20px!important;
+    }
+}
+
+
 
 .colorSubI {
     color: $primarycolor;
@@ -342,7 +352,7 @@ form {
     }
 }
 
-.contprinci { /*Contenedor Principal*/
+.contprinci { /*Contenedor Principal Margenes*/
     margin-left: auto!important;
     margin-right: auto!important;
 }
@@ -417,7 +427,10 @@ form {
     }
 } 
 
-.gradient{
-    background-image: linear-gradient($inicialcolor, orange);
+/*CSS NSUP*/
+.contsup1234{
+    /*margin-left: auto!important;
+    margin-right: auto!important;*/
+    background-color: $superiorcolor;
+    color: $superiorcolor!important;
 }
-
