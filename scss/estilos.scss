@@ -1,3 +1,7 @@
+/*----INDICE----*/
+
+
+
 /*Variables Start*/
 $primarycolor: rgb(110, 129, 182);
 
@@ -7,32 +11,122 @@ $secundariacolor: rgb(47, 73, 145);
 $superiorcolor: rgb(155, 26, 194);
 
 /*Variables End*/
-.logo{
+
+/*Comienzo*/
+/*--------------------CSS global (de todas las paginas)------------------*/
+
+.aquamarine { /*Color del background general*/
+    background-color: rgb(237, 245, 252);
+}
+
+.logo{ /*Utilizado en el logo de todos los headers*/
     border-radius: 50%;
     margin-right: 1%;
 }
 
-
-
-
-
-
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {/*Utilizado en el titulo del header*/
     .none {
         display: none;
     }
 }
 
-
-
-
-.dbody{
+.dbody{/*Utilizado en el body de todos las paginas, necesario para las animaciones de comienzo de pagina*/
     position: absolute;
     z-index: 1;
     width: 100%; 
 }
 
-.precargaR{
+footer {/*Da los parametros de las letras del footer*/
+    font-size: 11px;
+    font-family: helvetica;
+    color: white;
+}
+
+.borderwhite {/*Borde del footer*/
+    border: solid 1px white;
+}
+
+input {/*Utilizado en los formularios para dar el ancho de los inputs*/
+    width: 32%;
+}
+
+.titulo {/*Utilizado en el titulo del Header para setear parametros de letra*/
+    font-weight: bold;
+    font-family: helvetica;
+    text-align: left!important;
+    color: white;
+}
+
+.navbarI { /*Utilizado en los items del navbar*/
+    color: white;
+    text-align: right;
+}
+
+@media (max-width:576px){/*Extension de navbarI*/
+    .navbarI{
+        margin-right: 20px!important;
+    }
+}
+
+.h1indexani1 {
+    /*Animaciones de h1 de todas las paginas*/
+    opacity:0;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+.h1indexani2 {
+    /*Animaciones de h1 Index*/
+    opacity: 0;
+    animation-delay: 3.5s;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {/*Extension de animaciones de h1*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*------------------------------CSS global (de todas las paginas)---------------------*/
+/*Fin*/
+
+
+
+/*Comienzo*/
+/*-------------------------------------CSS DE INDEX ------------------------------------*/
+
+.colorSubI {/*Color de las letras del index*/
+    color: $primarycolor;
+}
+.colorHFI {/*Color de los contenedores de index*/
+    background-color: $primarycolor;
+}
+
+
+.transition {/*Animaciones de las tarjetas Index*/
+    transition: all 1s ease-out;
+}
+
+.cardani:hover { /*Animaciones de las tarjetas Index*/
+    transform: scale(1.3, 1.1);
+}
+
+.cardheight { /*Animaciones de las tarjetas Index*/
+    height: 20%;
+}
+
+
+.precargaR{ /*Utilizado en la animacion de inicio de pagina*/
     width: 50%;
     height: 900px;
     background-color: $primarycolor;
@@ -47,7 +141,7 @@ $superiorcolor: rgb(155, 26, 194);
     animation-fill-mode: forwards;
 }
 
-.precargaL{
+.precargaL{ /*Utilizado en la animacion de inicio de pagina*/
     width: 50%;
     height: 900px;
     background-color: $primarycolor;
@@ -60,137 +154,144 @@ $superiorcolor: rgb(155, 26, 194);
     animation-duration: 1s;
     animation-name: precarga2;
     animation-fill-mode: forwards;
-}
 
-.precargaR--inicial{
-    @extend .precargaR;
-    background-color: $inicialcolor;
-}
-
-.precargaL--inicial{
-    @extend .precargaL;
-    background-color: $inicialcolor;
-
-}
-.precargaR--primaria{
-    @extend .precargaR;
-    background-color: $primariacolor;
-}
-.precargaL--primaria{
-    @extend .precargaL;
-    background-color: $primariacolor;
-}
-.precargaR--medio{
-    @extend .precargaR;
-    background-color: $secundariacolor;
-}
-.precargaL--medio{
-    @extend .precargaL;
-    background-color: $secundariacolor;
-
-}
-.precargaR--superior{
-    @extend .precargaR;
-    background-color: $superiorcolor;
-}
-.precargaL--superior{
-    @extend .precargaL;
-    background-color: $superiorcolor;
-
-}
-
-
-@keyframes precarga{
-    0%{
-        width: 50%;
+    @keyframes precarga{ /*Utilizado en la animacion de inicio de pagina*/
+        0%{
+            width: 50%;
+        }
+        100%{
+            width: 0%;
+            left: 100%;
+        }
     }
-    100%{
-        width: 0%;
-        left: 100%;
+    
+    @keyframes precarga2{ /*Utilizado en la animacion de inicio de pagina*/
+        0%{ 
+            width: 50%;
+        }
+        100%{
+            width: 0%;
+            right: 100%;
+        }
     }
 }
 
-@keyframes precarga2{
-    0%{ 
-        width: 50%;
-    }
-    100%{
-        width: 0%;
-        right: 100%;
-    }
-}
+/*-------------------------------------CSS DE INDEX ----------------------------------*/
+/*Fin*/
 
-footer {
-    font-size: 11px;
-    font-family: helvetica;
-}
-
-input {
-    width: 32%;
-}
-
-.titulo {
-    font-weight: bold;
-    font-family: helvetica;
-    text-align: left!important;
-    color: white;
-}
- 
-.colorwhite { /*NAVBAR ITEMS*/
-    color: white;
-    text-align: right;
-}
-@media (max-width:576px){
-    .colorwhite{
-        margin-right: 20px!important;
-    }
-}
-
-
-
-.colorSubI {
-    color: $primarycolor;
-}
-.colorSubJ {
+/*Comienzo*/
+/*--------------------------------------CSS DE JARDIN -----------------------------------*/
+.colorSubJ {/*Color de las letras de jardin*/
     color: $inicialcolor;
 }
-.colorSubP {
-    color: $primariacolor;
-}
-.colorSubSe {
-    color: $secundariacolor;
-}
-.colorSubS {
-    color: $superiorcolor;
-}
-
-.colorHFI {
-    background-color: $primarycolor;
-}
-.colorHFJ {
+.colorHFJ {/*Color de los contenedores de Jardin*/
     background-color: $inicialcolor;
 }
-.colorHFP {
+
+.ulinicial{/*Utilizado en la info principal de jardin*/
+    display: none;
+}
+
+@media (max-width:576px) {/*Utilizado en la info principal de jardin*/
+    .ulinicial {
+        display: inline;
+    }
+} 
+
+@media (max-width:576px) {/*Utilizado en la info principal de jardin*/
+    .ulinicial2 {
+        display: none;
+    }
+} 
+
+
+.precargaR--inicial{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaR;
+    background-color: $inicialcolor;
+}
+.precargaL--inicial{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaL;
+    background-color: $inicialcolor;
+}
+
+/*---------------------------------CSS DE JARDIN ---------------------------------*/
+/*Fin*/
+
+/*Comienzo*/
+/*-------------------------------CSS DE PRIMARIA ----------------------------*/
+.colorSubP {/*Color de las letras de primaria*/
+    color: $primariacolor;
+}
+.colorHFP {/*Color de los contenedores de primaria*/
     background-color: $primariacolor;
 }
-.colorHFSe {
+
+.precargaR--primaria{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaR;
+    background-color: $primariacolor;
+}
+.precargaL--primaria{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaL;
+    background-color: $primariacolor;
+}
+
+/*------------------------CSS DE PRIMARIA ---------------------*/
+/*Fin*/
+
+/*Comienzo*/
+/*---------------------------CSS DE SECUNDARIA ---------------------*/
+.colorSubSe {/*Color de las letras de Secundaria*/
+    color: $secundariacolor;
+}
+.colorHFSe {/*Color de los contenedores de Secundaria*/
     background-color: $secundariacolor;
 }
-.colorHFS {
+
+.precargaR--medio{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaR;
+    background-color: $secundariacolor;
+}
+.precargaL--medio{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaL;
+    background-color: $secundariacolor;
+}
+
+/*----------------------CSS DE SECUNDARIA ---------------------*/
+/*Fin*/
+
+/*Comienzo*/
+/*-----------------------CSS DE SUPERIOR ---------------------*/
+.colorSubS {/*Color de las letras de Superior*/
+    color: $superiorcolor;
+}
+.colorHFS {/*Color de los contenedores de Superior*/
     background-color: $superiorcolor;
 }
 
-.aquamarine { /*Color del background general*/
-    background-color: rgb(237, 245, 252);
-}
-
-.borderwhite {
-    border: solid 1px white;
+.contsup1234{
+    background-color: $superiorcolor;
+    color: white;
 }
 
 
+.precargaR--superior{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaR;
+    background-color: $superiorcolor;
+}
+.precargaL--superior{ /*Utilizado en la animacion de inicio de pagina*/
+    @extend .precargaL;
+    background-color: $superiorcolor;
+}
 
-/*FORMULARIO DE PAGINAS*/
+/*-----------------------CSS DE SUPERIOR ---------------------*/
+/*Fin*/
+
+
+
+
+
+
+/*-------------------------FORMULARIO DE PAGINAS------------------------*/
 
 @media (min-width: 992px) {
     .divform {/*Contenedor del Formulario*/
@@ -319,40 +420,13 @@ form {
     }
 }  
 
-/*FORMULARIO DE PAGINAS*/
+/*----------------------FORMULARIO DE PAGINAS-------------*/
 
 
 /*CCS DE NIVEL MEDIO*/
 
-.h1indexani1 {
-    /*Animaciones de h1 Index/NMedio*/
-    opacity:0;
-    animation-delay: 1.5s;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-fill-mode: forwards;
-}
 
-.h1indexani2 {
-    /*Animaciones de h1 Index*/
-    opacity: 0;
-    animation-delay: 3.5s;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-fill-mode: forwards;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.contprinci { /*Contenedor Principal Margenes*/
+.contprinci { /*Contenedor Principal y contenedor del formulario Margenes*/
     margin-left: auto!important;
     margin-right: auto!important;
 }
@@ -391,47 +465,5 @@ form {
     .textul {
         font-size: 13px;
     }
-}
-
-/*ANIMACIONES DE LAS TARJETAS INDEX*/
-
-.transition {
-    transition: all 1s ease-out;
-}
-
-.cardani:hover {
-    transform: scale(1.3, 1.1);
-}
-
-.cardheight {
-    height: 20%;
-}
-
-/*ANIMACIONES DE LAS TARJETAS INDEX*/
-
-
-/*CSS DE INICIAL*/
-.ulinicial{
-    display: none;
-}
-
-@media (max-width:576px) {
-    .ulinicial {
-        display: inline;
-    }
-} 
-
-@media (max-width:576px) {
-    .ulinicial2 {
-        display: none;
-    }
-} 
-
-/*CSS NSUP*/
-.contsup1234{
-    /*margin-left: auto!important;
-    margin-right: auto!important;*/
-    background-color: $superiorcolor;
-    color: white;
 }
 
