@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liceo Informatico II</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body class="aquamarine">
+    <div class="dbody">
+
+        <!-- Encabezado principal junto con Barra de navegacion-->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-md navbar-light colorHFP">
+                <img src="img/Logo.png" class="logo"></img>
+                <a class="navbar-brand titulo" href="index.html">Complejo Educativo <br class="none">
+                    Liceo
+                    Informatico II</a></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Hamburguesa-->
+                <div class="navbar-collapse collapse justify-content-end" id="navbarsExample04">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link colorwhite"  href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorwhite " href="Ninicial.html">Jardin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorwhite active" aria-current="page" href="Nprimaria.html">Primaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorwhite" href="Nmedio.html">Secundaria</a>
+                        <li class="nav-item">
+                            <a class="nav-link colorwhite" href="Nsuperior.html">Superior</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <main class="container-fluid justify-content-center">
+             <!--Titulo del Nivel-->
+            <div class="container d-flex justify-content-center mb-4 mt-2">
+                <h1 class="colorSubP h1indexani1">Nivel Primario</h1>
+            </div>
+            <!--Introduccion del Nivel-->
+            <div class="container d-flex justify-content-center mb-4 mt-2">
+                <h2 class="h1indexani1 texth2 colorSubP">La primaria de los PI</h2>
+            </div>
+
+            <!-- Contenedor principal de informacion-->
+            <div class="container contprinci row border border-info rounded bg-light mb-2">
+                <!--Imagen Principal-->
+                <div class="col-12 col-md-6 col-xl-5 mb-1 mt-1">
+                    <img src="img/Secundario_Chico_Act.jpg" class="img-fluid rounded" alt="Img Secundaria">
+                </div>
+                <!-- Contenedor de la informacion-->
+                <div class=" col-12 col-md-6 col-xl-6">
+                    <h3 class="texth3 mt-2">Turno Mañana</h3>
+                    <ul class="textul">
+                        <li>Modalidad de 7:30hs a 13:15hs</li>
+                        <li>Con desayuno y almuerzo incluido</li>
+                        <li>Dividido en modalidad economía o informática</li>
+                    </ul>
+                    <h3 class="texth3">Turno Tarde</h3>
+                    <ul class="textul">
+                        <li>Modalidad de 13:30hs a 18:15hs</li>
+                        <li>Con almuerzo y merienda incluida</li>
+                        <li>Dividido en modalidad economía o informática</li>
+                    </ul>
+                    <h3 class="texth3">Adultos</h3>
+                    <ul class="textul">
+                        <li>Modalidad dirigida a los mayores de 18 años que decidieron terminar el secundario</li>
+                        <li>Vas a tu ritmo estudiando con los profesores</li>
+                        <li>Horarios de 13:15hs a 17:30hs</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <!-- Formulario de Consultas-->
+            <div class="divform container contprinci row border border-info rounded bg-light mb-2">
+                <form>
+                    <h4 class="forma">SOLICITAR INFORMACIÓN</h4>
+                    <div class="formb">¿Queres estudiar en el Liceo Informatico?
+                        Consultanos a traves del formulario y te respondemos a la brevedad
+                    </div>
+                    <input placeholder="Nombre" class="formd" />
+                    <input placeholder="Apellido" class="forme" />
+                    <input placeholder="E-Mail" class="formf" />
+                    <select name="Niveles" class="formg">
+                        <option value="P">Primaria</option>
+                        <option value="M">Secundaria</option>
+                        <option value="I">Inicial</option>
+                        <option value="S">Superior</option>
+                    </select>
+                    <textarea class="formh" placeholder="Su consulta"></textarea>
+                    <button class="formi">Enviar</button>
+                </form>
+            </div>
+
+
+        </main>
+
+
+<!-- Pie de pagina-->
+        <div class="container-fluid colorHFP borderwhite">
+            <footer class="container-fluid text-center py-1 my-2 border-top ">
+                <div class="col-md-12 text-center ">
+                    <a href="/" class="mb-1 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="20">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="mb-1 mb-md-0 colorwhite">COMPLEJO EDUCATIVO LICEO INFORMÁTICO II - CIUDAD EDUCATIVA
+                        <br>
+                        Ameghino 865 - (6300) Santa Rosa La Pampa (02594) 415777 / 412555
+                        informes_liceo@yahoo.com.ar</span>
+                </div>
+
+
+            </footer>
+        </div>
+    </div>
+
+     <!--Efectos de inicio de pagina-->
+    <div class="precargaR--primaria"></div>
+    <div class="precargaL--primaria"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
