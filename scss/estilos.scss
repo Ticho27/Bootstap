@@ -1,5 +1,8 @@
 /*----INDICE----*/
 
+
+
+
 .mbreset{
     margin: 0;
     border: 0;
@@ -7,6 +10,10 @@
 }
 
 /*Variables Start*/
+
+/*Colores de prueba*/
+$backjardin: #F3BB9D;
+/*Colores de prueba*/
 $liceo:#1c62b0;
 $ciudad: #702f91;
 
@@ -28,13 +35,38 @@ $iconcolor: #005dad;
 /*Comienzo*/
 /*--------------------CSS global (de todas las paginas)------------------*/
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
 .aquamarine { /*Color del background general*/
-    background-color: rgb(100, 255, 255);
+    background-color: #7CB4DC;
 }
 
 .logo{ /*Utilizado en el logo de todos los headers*/
     border-radius: 50%;
     margin-right: 1%;
+}
+
+.iconos{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 50%;
+    height: 3%;
+    width: 3%;
+}
+
+@media screen and (max-width: 576px){
+    .iconos{
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        border-radius: 50%;
+        height: 5%;
+        width: 5%;
+    }
 }
 
 @media screen and (min-width: 576px) {/*Utilizado en el titulo del header*/
@@ -119,7 +151,7 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 /*-------------------------------------CSS DE INDEX ------------------------------------*/
 
 .gradienti{
-    background: linear-gradient(to right, $iconcolor , $primarycolor);
+    background: linear-gradient(to right, $iconcolor , $iconcolor);
 }
 
 .cardgradj{
@@ -136,10 +168,10 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 }
 
 .colorSubI {/*Color de las letras del index*/
-    color: $primarycolor;
+    color: $iconcolor;
 }
 .colorHFI {/*Color de los contenedores de index*/
-    background-color: $primarycolor;
+    background-color: $iconcolor;
 }
 
 .cardimg{
@@ -225,8 +257,17 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 /*Comienzo*/
 /*--------------------------------------CSS DE JARDIN -----------------------------------*/
 .colorSubJ {/*Color de las letras de jardin*/
-    color: $inicialcolor;
+    color: $iconcolor!important;
 }
+
+.backjardin{
+    background-color: #F3BB9D;
+}
+
+.backbjardin{
+    background-color: #FC9C7C;
+}
+
 .colorHFJ {/*Color de los contenedores de Jardin*/
     background-color: $inicialcolor;
 }
@@ -330,7 +371,7 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 
 
 .contsup1234{
-    background-color: $liceo
+    background-color: $liceo;
     color: white;
 }
 
