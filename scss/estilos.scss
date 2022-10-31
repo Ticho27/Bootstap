@@ -2,7 +2,6 @@
 
 
 
-
 .mbreset{
     margin: 0;
     border: 0;
@@ -11,8 +10,15 @@
 
 /*Variables Start*/
 
+
+
 /*Colores de prueba*/
+$backbindex: #4CA4D4;
 $backjardin: #F3BB9D;
+$backbjardin: #FC9C7C;
+$backcjardin: #f58e5a;
+$backprimaria: #4CA4D4;
+$backbprimaria: #0a64ae;
 /*Colores de prueba*/
 $liceo:#1c62b0;
 $ciudad: #702f91;
@@ -107,7 +113,7 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
     text-align: right;
 }
 
-@media (max-width:576px){/*Extension de navbarI*/
+@media (max-width:768px){/*Extension de navbarI*/
     .navbarI{
         margin-right: 20px!important;
     }
@@ -142,6 +148,15 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 }
 
 
+.white{
+    color: whitesmoke;
+}
+
+.black{
+    color:black;
+}
+
+
 /*------------------------------CSS global (de todas las paginas)---------------------*/
 /*Fin*/
 
@@ -167,12 +182,30 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
     background: linear-gradient($superiorcolor , $gradientsuperior,$gradientsuperior);
 }
 
+.backb2index{
+    background-color: $backbindex;
+}
+
 .colorSubI {/*Color de las letras del index*/
     color: $iconcolor;
 }
 .colorHFI {/*Color de los contenedores de index*/
     background-color: $iconcolor;
 }
+
+.h2index{
+    color: whitesmoke;
+    font: helvetica;
+    font-size: 34px
+}
+
+
+.pindex{
+    @extend .h2index;
+    font-size: 18px;
+}
+
+
 
 .cardimg{
     width: 100%;
@@ -203,8 +236,8 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 
 .precargaR{ /*Utilizado en la animacion de inicio de pagina*/
     width: 50%;
-    height: 900px;
-    background-color: $primarycolor;
+    height: 1200px;
+    background-color: $iconcolor;
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -218,8 +251,8 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 
 .precargaL{ /*Utilizado en la animacion de inicio de pagina*/
     width: 50%;
-    height: 900px;
-    background-color: $primarycolor;
+    height: 1200px;
+    background-color: $iconcolor;
     position: absolute;
     z-index: 2;
     overflow-y: hidden;
@@ -229,6 +262,7 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
     animation-duration: 1s;
     animation-name: precarga2;
     animation-fill-mode: forwards;
+
 
     @keyframes precarga{ /*Utilizado en la animacion de inicio de pagina*/
         0%{
@@ -261,11 +295,15 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 }
 
 .backjardin{
-    background-color: #F3BB9D;
+    background-color: $backjardin;
 }
 
 .backbjardin{
-    background-color: #FC9C7C;
+    background-color: $backbjardin;
+}
+
+.backcjardin{
+    background-color: $backcjardin;
 }
 
 .colorHFJ {/*Color de los contenedores de Jardin*/
@@ -307,9 +345,6 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 
 /*Comienzo*/
 /*-------------------------------CSS DE PRIMARIA ----------------------------*/
-.colorSubP {/*Color de las letras de primaria*/
-    color: $primariacolor;
-}
 .colorHFP {/*Color de los contenedores de primaria*/
     background-color: $primariacolor;
 }
@@ -320,11 +355,22 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 
 .precargaR--primaria{ /*Utilizado en la animacion de inicio de pagina*/
     @extend .precargaR;
+    height: 1100px;
     background-color: $primariacolor;
 }
 .precargaL--primaria{ /*Utilizado en la animacion de inicio de pagina*/
     @extend .precargaL;
+    height: 1100px;
     background-color: $primariacolor;
+}
+
+.backprimaria{
+    background-color: $backprimaria;
+}
+
+
+.backbprimaria{
+    background-color: $backbprimaria;
 }
 
 /*------------------------CSS DE PRIMARIA ---------------------*/
@@ -370,9 +416,14 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
 }
 
 
-.contsup1234{
+.colorsup{
     background-color: $liceo;
     color: white;
+    
+}
+
+.bordenegro{
+    border: black solid 1px;
 }
 
 
@@ -416,12 +467,15 @@ form {
 .forma {
     grid-area: a;
     margin-top: 5%;
+    font-family: helvetica;
+    font-size: 22px;
+    
 }
 
 .formb {
     grid-area: b;
     margin-top: 5%;
-
+    font-family: helvetica;
 }
 
 .formc {
