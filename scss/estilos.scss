@@ -156,6 +156,43 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
     color:black;
 }
 
+.texth2 {
+    font-size: 15px;
+    text-align: justify;
+}
+
+@media (min-width: 992px) {
+    .texth2 {
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.texth3 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .texth3 {
+        font-size: 18px;
+    }
+}
+
+.textul {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .textul {
+        font-size: 13px;
+    }
+}
+
+
 
 /*------------------------------CSS global (de todas las paginas)---------------------*/
 /*Fin*/
@@ -436,6 +473,11 @@ input {/*Utilizado en los formularios para dar el ancho de los inputs*/
     background-color: $superiorcolor;
 }
 
+.textcarrera{
+    font-size: 20px;
+    font-family: helvetica;
+}
+
 /*-----------------------CSS DE SUPERIOR ---------------------*/
 /*Fin*/
 
@@ -587,39 +629,4 @@ form {
     margin-right: auto!important;
 }
 
-.texth2 {
-    font-size: 15px;
-    text-align: justify;
-}
-
-@media (min-width: 992px) {
-    .texth2 {
-        font-size: 18px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
-.texth3 {
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-@media (min-width: 768px) and (max-width:992px) {
-    .texth3 {
-        font-size: 18px;
-    }
-}
-
-.textul {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-@media (min-width: 768px) and (max-width:992px) {
-    .textul {
-        font-size: 13px;
-    }
-}
 

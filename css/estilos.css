@@ -152,65 +152,107 @@ input {
   color: black;
 }
 
+/* line 159, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+.texth2 {
+  font-size: 15px;
+  text-align: justify;
+}
+
+@media (min-width: 992px) {
+  /* line 165, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  .texth2 {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* line 172, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+.texth3 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* line 178, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  .texth3 {
+    font-size: 18px;
+  }
+}
+
+/* line 183, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+.textul {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* line 190, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  .textul {
+    font-size: 13px;
+  }
+}
+
 /*------------------------------CSS global (de todas las paginas)---------------------*/
 /*Fin*/
 /*Comienzo*/
 /*-------------------------------------CSS DE INDEX ------------------------------------*/
-/* line 168, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 205, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .gradienti {
   background: linear-gradient(to right, #005dad, #005dad);
 }
 
-/* line 172, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 209, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardgradj {
   background: linear-gradient(#ff7f3e, #fe0005, #fe0005);
 }
 
-/* line 175, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 212, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardgradp {
   background: linear-gradient(#1f5b99, #004ca4, #004ca4);
 }
 
-/* line 178, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 215, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardgradse {
   background: linear-gradient(#1c5c9c, #004392, #004392);
 }
 
-/* line 181, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 218, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardgrads {
   background: linear-gradient(#a3378e, #930f80, #930f80);
 }
 
-/* line 185, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 222, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backb2index {
   background-color: #4CA4D4;
 }
 
-/* line 189, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 226, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorSubI {
   /*Color de las letras del index*/
   color: #005dad;
 }
 
-/* line 192, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 229, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorHFI {
   /*Color de los contenedores de index*/
   background-color: #005dad;
 }
 
-/* line 196, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 233, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .h2index, .pindex {
   color: whitesmoke;
   font: helvetica;
   font-size: 34px;
 }
 
-/* line 203, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 240, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .pindex {
   font-size: 18px;
 }
 
-/* line 210, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 247, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardimg {
   width: 100%;
   margin: 0 !important;
@@ -218,32 +260,32 @@ input {
   padding: 0 !important;
 }
 
-/* line 218, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 255, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardbtn {
   width: 100%;
   background-color: white;
   color: #6e81b6;
 }
 
-/* line 224, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 261, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .transition {
   /*Animaciones de las tarjetas Index*/
   transition: all 0.5s ease-out;
 }
 
-/* line 228, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 265, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardani:hover {
   /*Animaciones de las tarjetas Index*/
   transform: scale(1.1, 1.1);
 }
 
-/* line 232, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 269, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .cardheight {
   /*Animaciones de las tarjetas Index*/
   height: 20%;
 }
 
-/* line 237, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 274, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaR, .precargaR--inicial, .precargaR--primaria, .precargaR--medio, .precargaR--superior {
   /*Utilizado en la animacion de inicio de pagina*/
   width: 50%;
@@ -260,7 +302,7 @@ input {
   animation-fill-mode: forwards;
 }
 
-/* line 252, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 289, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaL, .precargaL--inicial, .precargaL--primaria, .precargaL--medio, .precargaL--superior {
   /*Utilizado en la animacion de inicio de pagina*/
   width: 50%;
@@ -303,39 +345,39 @@ input {
 /*Fin*/
 /*Comienzo*/
 /*--------------------------------------CSS DE JARDIN -----------------------------------*/
-/* line 293, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 330, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorSubJ {
   /*Color de las letras de jardin*/
   color: #005dad !important;
 }
 
-/* line 297, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 334, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backjardin {
   background-color: #F3BB9D;
 }
 
-/* line 301, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 338, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backbjardin {
   background-color: #FC9C7C;
 }
 
-/* line 305, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 342, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backcjardin {
   background-color: #f58e5a;
 }
 
-/* line 309, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 346, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorHFJ {
   /*Color de los contenedores de Jardin*/
   background-color: #ff7f3e;
 }
 
-/* line 313, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 350, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .gradientj {
   background: linear-gradient(to right, #005dad, #ff7f3e, #ff7f3e);
 }
 
-/* line 317, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 354, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .ulinicial {
   /*Utilizado en la info principal de jardin*/
   display: none;
@@ -343,7 +385,7 @@ input {
 
 @media (max-width: 576px) {
   /*Utilizado en la info principal de jardin*/
-  /* line 322, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 359, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .ulinicial {
     display: inline;
   }
@@ -351,19 +393,19 @@ input {
 
 @media (max-width: 576px) {
   /*Utilizado en la info principal de jardin*/
-  /* line 328, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 365, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .ulinicial2 {
     display: none;
   }
 }
 
-/* line 334, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 371, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaR--inicial {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #ff7f3e;
 }
 
-/* line 338, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 375, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaL--inicial {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #ff7f3e;
@@ -373,37 +415,37 @@ input {
 /*Fin*/
 /*Comienzo*/
 /*-------------------------------CSS DE PRIMARIA ----------------------------*/
-/* line 348, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 385, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorHFP {
   /*Color de los contenedores de primaria*/
   background-color: #1f5b99;
 }
 
-/* line 352, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 389, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .gradientp {
   background: linear-gradient(to right, #005dad, #1f5b99, #1f5b99);
 }
 
-/* line 356, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 393, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaR--primaria {
   /*Utilizado en la animacion de inicio de pagina*/
   height: 1100px;
   background-color: #1f5b99;
 }
 
-/* line 361, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 398, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaL--primaria {
   /*Utilizado en la animacion de inicio de pagina*/
   height: 1100px;
   background-color: #1f5b99;
 }
 
-/* line 367, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 404, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backprimaria {
   background-color: #4CA4D4;
 }
 
-/* line 372, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 409, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .backbprimaria {
   background-color: #0a64ae;
 }
@@ -412,30 +454,30 @@ input {
 /*Fin*/
 /*Comienzo*/
 /*---------------------------CSS DE SECUNDARIA ---------------------*/
-/* line 381, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 418, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorSubSe {
   /*Color de las letras de Secundaria*/
   color: #1c5c9c;
 }
 
-/* line 384, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 421, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorHFSe {
   /*Color de los contenedores de Secundaria*/
   background-color: #1c5c9c;
 }
 
-/* line 388, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 425, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .gradientse {
   background: linear-gradient(to right, #005dad, #1c5c9c, #1c5c9c);
 }
 
-/* line 393, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 430, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaR--medio {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #1c5c9c;
 }
 
-/* line 397, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 434, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaL--medio {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #1c5c9c;
@@ -445,51 +487,57 @@ input {
 /*Fin*/
 /*Comienzo*/
 /*-----------------------CSS DE SUPERIOR ---------------------*/
-/* line 407, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 444, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorSubS {
   /*Color de las letras de Superior*/
   color: #a3378e;
 }
 
-/* line 410, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 447, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorHFS {
   /*Color de los contenedores de Superior*/
   background-color: #a3378e;
 }
 
-/* line 414, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 451, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .gradients {
   background: linear-gradient(to right, #005dad, #a3378e, #a3378e);
 }
 
-/* line 419, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 456, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .colorsup {
   background-color: #1c62b0;
   color: white;
 }
 
-/* line 425, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 462, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .bordenegro {
   border: black solid 1px;
 }
 
-/* line 430, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 467, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaR--superior {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #a3378e;
 }
 
-/* line 434, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 471, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .precargaL--superior {
   /*Utilizado en la animacion de inicio de pagina*/
   background-color: #a3378e;
+}
+
+/* line 476, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+.textcarrera {
+  font-size: 20px;
+  font-family: helvetica;
 }
 
 /*-----------------------CSS DE SUPERIOR ---------------------*/
 /*Fin*/
 /*-------------------------FORMULARIO DE PAGINAS------------------------*/
 @media (min-width: 992px) {
-  /* line 450, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 492, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .divform {
     /*Contenedor del Formulario*/
     width: 70%;
@@ -498,7 +546,7 @@ input {
   }
 }
 
-/* line 457, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 499, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -506,7 +554,7 @@ form {
   grid-template-areas: "a d g " "b e h" "c f i";
 }
 
-/* line 467, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 509, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .forma {
   grid-area: a;
   margin-top: 5%;
@@ -514,19 +562,19 @@ form {
   font-size: 22px;
 }
 
-/* line 475, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 517, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formb {
   grid-area: b;
   margin-top: 5%;
   font-family: helvetica;
 }
 
-/* line 481, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 523, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formc {
   grid-area: c;
 }
 
-/* line 485, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 527, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formd {
   grid-area: d;
   margin-top: 3%;
@@ -535,7 +583,7 @@ form {
   margin: auto;
 }
 
-/* line 493, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 535, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .forme {
   grid-area: e;
   margin-top: 3%;
@@ -544,7 +592,7 @@ form {
   margin: auto;
 }
 
-/* line 501, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 543, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formf {
   grid-area: f;
   margin-top: 3%;
@@ -553,7 +601,7 @@ form {
   margin: auto;
 }
 
-/* line 509, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 551, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formg {
   grid-area: g;
   margin-top: 5%;
@@ -562,14 +610,14 @@ form {
   margin: auto;
 }
 
-/* line 517, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 559, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formh {
   grid-area: h;
   width: 70%;
   margin: auto;
 }
 
-/* line 523, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 565, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .formi {
   grid-area: i;
   height: 50%;
@@ -578,42 +626,42 @@ form {
 }
 
 @media (max-width: 576px) {
-  /* line 532, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 574, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 100px 40px 40px 40px 40px 60px 40px;
     grid-template-areas: "a " "b" "d" "e" "f" "g" "h" "i";
   }
-  /* line 547, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 589, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .formd {
     grid-area: d;
     height: 80%;
     width: 60%;
     margin: auto;
   }
-  /* line 553, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 595, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .forme {
     grid-area: e;
     height: 80%;
     width: 60%;
     margin: auto;
   }
-  /* line 559, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 601, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .formf {
     grid-area: f;
     height: 80%;
     width: 60%;
     margin: auto;
   }
-  /* line 565, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 607, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .formg {
     grid-area: g;
     height: 80%;
     width: 60%;
     margin: auto;
   }
-  /* line 571, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+  /* line 613, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
   .formi {
     grid-area: i;
     height: 80%;
@@ -624,53 +672,11 @@ form {
 
 /*----------------------FORMULARIO DE PAGINAS-------------*/
 /*CCS DE NIVEL MEDIO*/
-/* line 585, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
+/* line 627, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
 .contprinci {
   /*Contenedor Principal y contenedor del formulario Margenes*/
   margin-left: auto !important;
   margin-right: auto !important;
-}
-
-/* line 590, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-.texth2 {
-  font-size: 15px;
-  text-align: justify;
-}
-
-@media (min-width: 992px) {
-  /* line 596, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-  .texth2 {
-    font-size: 18px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-/* line 603, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-.texth3 {
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 609, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-  .texth3 {
-    font-size: 18px;
-  }
-}
-
-/* line 614, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-.textul {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 621, ../../../Desktop/Programacion/CoderCurso/Bootstrap/scss/estilos.scss */
-  .textul {
-    font-size: 13px;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
